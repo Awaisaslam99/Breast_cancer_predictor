@@ -215,29 +215,6 @@ def main():
         st.plotly_chart(radar_chart.to_dict())
 
   
-st.markdown(
-    """
-    <style>
-        .footer-warning {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            width: 100%;
-            padding: 5px;
-            text-align: center;
-            font-weight: bold;
-        }
-    </style>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    
-    <div class="footer-warning">
-        <i class='fas fa-exclamation-triangle' style='font-size: 18px; color: red; margin-right: 5px;'></i>
-        <span style='font-size: 14px;'>This app can assist medical professionals in making a diagnosis, but should not be used as a substitute for a professional diagnosis!</span>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 if __name__ == '__main__':
     main()
